@@ -1,0 +1,1373 @@
+/* ========================================================================== */
+/* Global Styles */
+/* ========================================================================== */
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: #FFF085;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 75px;
+    background-color: #FFF085;
+}
+
+.container {
+    width: 80%;
+    margin-inline: auto;
+}
+
+.upper-case {
+    text-transform: uppercase;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.color-orange {
+    color: orangered;
+}
+
+img {
+    width: 100%;
+}
+
+.badge {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    box-shadow: 5px 5px black;
+    display: block;
+    transform: rotate(-3deg);
+    width: fit-content;
+}
+
+.w-70 {
+    width: 70%;
+}
+
+.w-30 {
+    width: 30%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* ========================================================================== */
+/* Navbar */
+/* ========================================================================== */
+.navbar {
+    background-color: white;
+    position: fixed;
+    top: 20px;
+    right: 0;
+    left: 0;
+    border: 2px solid;
+    border-radius: 15px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    z-index: 9999999;
+}
+
+.navbar .left-section span {
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.med-section ul {
+    list-style: none;
+    gap: 10px;
+}
+
+.med-section .med-images {
+    width: 15px;
+}
+
+.med-section ul li {
+    cursor: pointer;
+}
+
+.med-section ul li:hover {
+    color: orangered;
+}
+
+.navbar .right-section a {
+    background-color: #FFD15B;
+    border: 2px solid black;
+    color: black;
+    border-radius: 20px;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.right-section .btn {
+    transition: transform 0.5s;
+}
+
+.navbar .right-section div.btn:hover {
+    transform: translate(5px, 5px);
+}
+
+/* ========================================================================== */
+/* Hero Section */
+/* ========================================================================== */
+.hero-parent {
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-section {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-section .left-section {
+    position: relative;
+}
+
+.hero-section .left-section h2 {
+    border: 2px solid;
+}
+
+.hero-section .left-section h1 {
+    font-size: 72px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px;
+    font-style: normal;
+}
+
+.hero-section .left-section p {
+    background-color: white;
+    padding: 20px;
+    font-size: 25px;
+    border: 2px solid black;
+    box-shadow: 2px 2px black;
+    z-index: 10;
+}
+
+.hero-section .left-section span.red-text {
+    color: #E7000B;
+}
+
+.hero-section .left-section span.blue-text {
+    color: #155DFC;
+}
+
+.hero-section .left-section div.btn .btn-img {
+    width: 30px;
+}
+
+.hero-section .left-section button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    align-items: center;
+    font-size: 20px;
+    box-shadow: 5px 5px black;
+    position: relative;
+    transition: transform 0.5s, box-shadow 0.5s;
+}
+
+.hero-section .left-section .special-btn button {
+    background-color: white;
+    color: black;
+    border: 5px solid;
+}
+
+.hero-section .left-section button:hover {
+    transform: translate(5px, 5px);
+    box-shadow: 0 0;
+}
+
+.hero-section .left-section .btns {
+    gap: 20px;
+}
+
+.hero-section .right-section {
+    position: relative;
+    transform: rotate(3deg);
+}
+
+.hero-section .right-section img {
+    border: 5px solid;
+    box-shadow: 5px 5px black;
+    object-fit: cover;
+    width: 600px;
+    height: 400px;
+    transition: transform 0.5s;
+}
+
+.hero-section .right-section img:hover {
+    transform: translate(-5px, -5px);
+}
+
+.hero-section .right-section .image {
+    position: relative;
+}
+
+.hero-section .right-section span {
+    position: absolute;
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    top: -10px;
+    right: -10px;
+    transform: rotate(3deg);
+    border: 2px solid black;
+    box-shadow: 2px 2px black;
+    z-index: 5;
+}
+
+.hero-section .left-section .style {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.1);
+    width: 120px;
+    height: 120px;
+    top: -100px;
+    left: -100px;
+    transform: rotate(13deg);
+}
+
+.hero-section .right-section .style {
+    width: 100px;
+    height: 100px;
+    background-color: rgba(255, 0, 0, 0.1);
+    position: absolute;
+    top: -100px;
+    right: -40px;
+    transform: rotate(35deg);
+}
+
+.hero-section .left-section .specaill {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: rgba(0, 0, 255, 0.1);
+    bottom: 0;
+    right: 150px;
+    z-index: -1;
+    transform: rotate(40deg);
+}
+
+/* ========================================================================== */
+/* Second Section */
+/* ========================================================================== */
+.second-section {
+    background-color: white;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    margin-top: 50px;
+    padding-top: 50px;
+}
+
+.second-section .container {
+    gap: 20px;
+    position: relative;
+    align-items: flex-start;
+}
+
+.second-section .container h2 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.second-section .left-section {
+    position: sticky;
+    top: 100px;
+}
+
+.second-section .left-section .badge {
+    position: absolute;
+    top: 25px;
+    right: 0;
+    transform: rotate(4deg);
+}
+
+.second-section .left-section .card {
+    border: 5px solid black;
+    box-shadow: 3px 3px black;
+    padding: 20px;
+    gap: 20px;
+    margin-bottom: 50px;
+    align-items: center;
+}
+
+.second-section .left-section .card .img-div {
+    width: 200px;
+    position: relative;
+}
+
+.second-section .left-section .card .img-div img {
+    border: 2px solid black;
+    display: block;
+    width: 100%;
+}
+
+.second-section .left-section .card .special {
+    position: absolute;
+    background-color: red;
+    color: white;
+    padding: 3px 8px;
+    border: 1px solid black;
+    text-transform: uppercase;
+    top: -10px;
+    right: -5px;
+    transform: rotate(7deg);
+    z-index: 2;
+    font-weight: bold;
+}
+
+.second-section .left-section .tech {
+    background-color: #FFDF20;
+    color: black;
+    border: 2px solid;
+    box-shadow: 2px 2px black;
+    padding: 4px 6px;
+    text-transform: uppercase;
+    font-size: 70%;
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.second-section .right-section h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 0;
+}
+
+.second-section .right-section p {
+    font-size: 15px;
+}
+
+.second-section .left-section .card .foot .icon {
+    gap: 40px;
+    justify-content: center;
+}
+
+.second-section .left-section .card .foot .icon .icon-img {
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    gap: 5px;
+}
+
+.second-section .left-section .foot img {
+    width: 20px;
+}
+
+.second-section .right-section {
+    margin-top: 0;
+    position: sticky;
+    top: 100px;
+}
+
+.second-section .right-section .right-cards {
+    border: 2px solid;
+    box-shadow: 10px 10px black;
+    padding: 20px;
+    margin-bottom: 50px;
+    background-color: white;
+}
+
+.second-section .right-section .right-cards h3 {
+    font-size: 30px;
+    font-weight: bolder;
+    margin: 10px 0;
+}
+
+.second-section .right-section .right-cards .trending-item {
+    margin-bottom: 15px;
+    align-items: center;
+    gap: 15px;
+}
+
+.second-section .right-section .right-cards .trending-item .number {
+    color: red;
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.second-section .right-section .right-cards .item-info h4 {
+    font-size: 20px;
+    margin: 0 0 5px 0;
+}
+
+.second-section .right-section .right-cards .item-meta span {
+    font-weight: normal;
+    font-size: 15px;
+    color: gray;
+}
+
+.second-section .left-section .last-btn {
+    background-color: black;
+    color: white;
+    border: none;
+    font-size: 30px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    margin-inline: auto;
+    display: block;
+    margin-bottom: 50px;
+    box-shadow: 5px 5px black;
+    transition: transform 0.5s, box-shadow 0.5s;
+}
+
+.second-section .left-section .last-btn:hover {
+    cursor: pointer;
+    transform: translate(5px, 5px);
+    box-shadow: 0 0 black;
+}
+
+.second-section .left-section .card {
+    position: relative;
+    transition: transform 0.5s, box-shadow 0.5s;
+}
+
+.second-section .left-section .card:hover {
+    transform: translate(-3px, -3px);
+    box-shadow: 0 0 black;
+}
+
+.second-section .left-section .card:hover .change-red {
+    color: red;
+}
+
+.second-section .left-section .card:hover .change-blue {
+    color: blue;
+}
+
+.second-section .left-section .card:hover .change-purpule {
+    color: rgb(152, 16, 250);
+}
+
+.container .right-section .right-cards.special>div {
+    text-transform: uppercase;
+    border: 2px solid;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.container .right-section .right-cards.special .one {
+    background-color: #FEF9C2;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.container .right-section .right-cards.special .one:hover {
+    background-color: yellow;
+    transform: scale(1.04);
+    box-shadow: 5px 5px black;
+}
+
+.container .right-section .right-cards.special .two {
+    background-color: #DBFCE7;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.container .right-section .right-cards.special .two:hover {
+    background-color: green;
+    transform: scale(1.04);
+    box-shadow: 5px 5px black;
+}
+
+.container .right-section .right-cards.special .three {
+    background-color: #FCE7F3;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.container .right-section .right-cards.special .three:hover {
+    background-color: rosybrown;
+    transform: scale(1.04);
+    box-shadow: 5px 5px black;
+}
+
+.container .right-section .right-cards.special .four {
+    background-color: #DBEAFE;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.container .right-section .right-cards.special .four:hover {
+    background-color: lightblue;
+    transform: scale(1.04);
+    box-shadow: 5px 5px black;
+}
+
+.container .right-section .right-cards.special .five {
+    background-color: #F3E8FF;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.container .right-section .right-cards.special .five:hover {
+    background-color: purple;
+    transform: scale(1.04);
+    box-shadow: 5px 5px black;
+}
+
+/* ========================================================================== */
+/* Third Section */
+/* ========================================================================== */
+.third-section {
+    background-color: #FFD230;
+    padding-block: 50px;
+    border-bottom: 5px solid black;
+}
+
+.third-section-cards {
+    gap: 30px;
+    padding-top: 50px;
+}
+
+.third-section h2 {
+    font-size: 50px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-block: 0;
+}
+
+.third-section .container p {
+    text-align: center;
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 1.6;
+    color: gray;
+    font-weight: bold;
+}
+
+.third-section .third-section-cards .card {
+    background-color: white;
+    border: 5px solid black;
+    box-shadow: 5px 5px black;
+    width: 33.333%;
+    padding: 20px;
+    transition: transform 0.5s;
+    position: relative;
+}
+
+.third-section .third-section-cards .card .photo img {
+    width: 150px;
+    border: 5px solid;
+}
+
+.third-section .third-section-cards .card h3 {
+    font-size: 30px;
+    font-weight: bolder;
+    margin-bottom: 0;
+}
+
+.third-section .third-section-cards .card h4 {
+    color: gray;
+}
+
+.third-section .third-section-cards .card .foot {
+    gap: 20px;
+    justify-content: center;
+}
+
+.third-section .third-section-cards .card .foot img {
+    width: 50px;
+    background-color: black;
+    display: block;
+    padding: 10px;
+}
+
+.third-section .third-section-cards .card:hover {
+    transform: translate(-5px, -5px);
+}
+
+.third-section .third-section-cards .tw-img {
+    transition: background-color 0.5s, border 0.5s, box-shadow 0.5s;
+}
+
+.third-section .third-section-cards .tw-img:hover img {
+    background-color: rgb(30, 146, 182);
+    border: 2px solid;
+    box-shadow: 5px 5px black;
+}
+
+.third-section .third-section-cards .li-img {
+    transition: background-color 0.5s, border 0.5s, box-shadow 0.5s;
+}
+
+.third-section .third-section-cards .li-img:hover img {
+    background-color: blue;
+    border: 2px solid;
+    box-shadow: 5px 5px black;
+}
+
+.third-section .third-section-cards .in-img {
+    transition: background-color 0.5s, border 0.5s, box-shadow 0.5s;
+}
+
+.third-section .third-section-cards .in-img:hover img {
+    background-color: tomato;
+    border: 2px solid;
+    box-shadow: 5px 5px black;
+}
+
+.third-section .card span.badge {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    transform: rotate(10deg);
+    background-color: red;
+    box-shadow: none;
+    padding: 5px;
+    border: 2px solid black;
+}
+
+.third-section .card.card-1 {
+    background-color: #FEF9C2;
+}
+
+.third-section .card.card-1:hover .name {
+    color: red;
+}
+
+.third-section .card.card-2 {
+    background-color: #DBFCE7;
+}
+
+.third-section .card.card-2:hover .name {
+    color: blue;
+}
+
+
+.third-section .card.card-3 {
+    background-color: #FCE7F3;
+}
+
+.third-section .card.card-3:hover .name {
+    color: purple;
+}
+
+.third-section .card span.badge-2 {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    transform: rotate(-10deg);
+    background-color: #2B7FFF;
+    box-shadow: none;
+    padding: 5px;
+    border: 2px solid black;
+    color: white;
+    padding: 5px 10px;
+}
+
+.third-section .card span.badge-3 {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    transform: rotate(40deg);
+    background-color: #AD46FF;
+    box-shadow: none;
+    padding: 5px;
+    border: 2px solid black;
+    color: black;
+    padding: 5 10px;
+}
+
+.third-section .third-section-head {
+    position: relative;
+}
+
+.third-section .line {
+    display: block;
+    width: 120px;
+    height: 5px;
+    background-color: black;
+    position: absolute;
+    top: 120px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Start fourth Section */
+.forth-section {
+    background-color: white;
+    padding-block: 50px;
+    position: relative;
+}
+
+.forth-section .sections {
+    gap: 50px;
+}
+
+.forth-section h2 {
+    font-size: 50px;
+    margin-block: 0;
+}
+
+.forth-section .left-section h2 {
+    font-size: 30px;
+    font-weight: bolder;
+    margin-block: 0;
+}
+
+.forth-section .container h3 {
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 1.6;
+    color: gray;
+    font-weight: bold;
+}
+
+.forth-section .line {
+    display: block;
+    width: 120px;
+    height: 5px;
+    background-color: black;
+    position: absolute;
+    top: 120px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.forth-section .sections .left-section {
+    width: 50%;
+}
+
+.forth-section .sections .left-section p {
+    border: 3px solid black;
+    box-shadow: 5px 5px black;
+    padding: 10px;
+    line-height: 1.7;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.forth-section .sections .left-section .true.check img {
+    background-color: red;
+    border: 1px solid black;
+    padding: 10px;
+    width: 50px;
+}
+
+.forth-section .sections .left-section .true.discord img {
+    background-color: #2B7FFF;
+    border: 1px solid black;
+    padding: 10px;
+    width: 50px;
+}
+
+.forth-section .sections .left-section .true.star img {
+    background-color: #AD46FF;
+    border: 1px solid black;
+    padding: 10px;
+    width: 50px;
+}
+
+.forth-section .sections .left-section .true.pen img {
+    background-color: #00C950;
+    border: 1px solid black;
+    padding: 10px;
+    width: 50px;
+}
+
+.forth-section .sections .left-section .true {
+    gap: 20px;
+    align-items: center;
+}
+
+.forth-section .sections .left-section .true .special {
+    border: none;
+    box-shadow: none;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.forth-section button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 20px 40px;
+    align-items: center;
+    font-size: 20px;
+    box-shadow: 5px 5px black;
+    position: relative;
+    transition: transform 0.5s, box-shadow 0.5s;
+    gap: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.forth-section button img {
+    width: 30px;
+}
+
+.forth-section button:hover {
+    transform: translate(5px, 5px);
+    box-shadow: 0 0;
+}
+
+.forth-section .right-section {
+    border: 3px solid;
+    box-shadow: 5px 5px black;
+    width: 50%;
+}
+
+.forth-section .right-section h2 {
+    padding: 20px;
+    font-weight: bold;
+}
+
+.forth-section .right-section h2 {
+    font-size: 30px;
+}
+
+.forth-section .right-section .card img {
+    width: 50px;
+    border: 1px solid;
+
+}
+
+.forth-section .right-section .card {
+    background-color: #FEF2F2;
+    border: 2px solid;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.inner {
+    padding: 20PX;
+}
+
+.forth-section .right-section .card .foot {
+    gap: 10px;
+}
+
+.forth-section .right-section .card .foot .name {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.forth-section .right-section .card.card-2 {
+    background-color: #EFF6FF;
+}
+
+.forth-section .right-section .card.card-3 {
+    background-color: #FAF5FF;
+}
+
+/* End fourth Section */
+/* ====================== */
+
+/* Start sooter */
+.footer {
+    padding: 50px;
+    background-color: black;
+    color: white;
+}
+
+.footer .sections {
+    gap: 20px;
+}
+
+.footer .left-section,
+.footer .medel-section,
+.footer .right-section {
+    width: 33.3333%;
+}
+
+.footer .left-section img {
+    width: 50px;
+    padding: 10px;
+    background-color: white;
+}
+
+.footer .left-section .img-section {
+    align-items: center;
+    gap: 20px;
+}
+
+.footer .left-section .img-section span {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.footer .left-section p {
+    line-height: 1.7;
+    font-size: 15px;
+}
+
+.footer .medel-section h2 {
+    font-size: 25px;
+}
+
+.footer .medel-section ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.footer .medel-section ul li {
+    margin-bottom: 10px;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.footer .right-section h2 {
+    font-size: 25px;
+}
+
+.footer .right-section p {
+    line-height: 1.7;
+    font-size: 15px;
+}
+
+.footer .right-section form input {
+    padding: 16px;
+    border: 1px solid white;
+    background-color: black;
+    width: 430px;
+    color: gray;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 20px;
+
+}
+.footer button {
+    background-color: #FFD230;
+    width: 430px;
+    padding: 16px;
+    border: none;
+    box-shadow: 2px 2px #FFD230;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: transform 0.5s;
+}
+
+.footer button:hover {
+    transform: translate(5px, 5px);
+    background-color: #FDC700;
+}
+
+.footer .footer-foot {
+    padding: 20px;
+}
+.footer .footer-foot .content {
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer .footer-foot .content ul {
+    list-style: none;
+    gap: 20px;
+    text-transform: uppercase;
+    
+}
+/* End sooter */
+
+/* ========================================================================== */
+/* Responsive (append at the END of style.css - base code is untouched)       */
+/* ========================================================================== */
+/*
+   Breakpoints (Bootstrap):
+   X-Small  : < 576px
+   Small    : >= 576px
+   Medium   : >= 768px
+   Large    : >= 992px
+   X-Large  : >= 1200px
+   XX-Large : >= 1400px   (base design - no changes needed)
+
+   The base code is desktop-first, so each block below targets
+   the screens SMALLER than a breakpoint. Order matters: keep it
+   from the biggest to the smallest.
+*/
+
+/* ========================================================================== */
+/* Below XX-Large  (< 1400px)  ->  X-Large screens and smaller */
+/* ========================================================================== */
+@media (max-width: 1399.98px) {
+
+    /* Hero Section */
+    .hero-section .left-section h1 {
+        font-size: 64px;
+    }
+
+    .hero-section .right-section img {
+        width: 520px;
+        height: 350px;
+    }
+
+    /* Second Section */
+    .second-section .left-section .card .foot .icon {
+        flex-wrap: wrap;
+        gap: 15px 25px;
+    }
+
+    /* Footer */
+    .footer .right-section form input,
+    .footer button {
+        width: 100%;
+    }
+}
+
+/* ========================================================================== */
+/* Below X-Large  (< 1200px)  ->  Large screens and smaller */
+/* ========================================================================== */
+@media (max-width: 1199.98px) {
+
+    /* Navbar */
+    .navbar .left-section span {
+        font-size: 26px;
+    }
+
+    /* Hero Section */
+    .hero-section .left-section h1 {
+        font-size: 56px;
+    }
+
+    .hero-section .left-section p {
+        font-size: 20px;
+    }
+
+    .hero-section .right-section img {
+        width: 440px;
+        height: 310px;
+    }
+
+    /* Second Section */
+    .second-section .left-section .card .img-div {
+        width: 160px;
+    }
+
+    /* Third Section */
+    .third-section .third-section-cards {
+        gap: 20px;
+    }
+
+    .third-section h2,
+    .forth-section h2 {
+        font-size: 42px;
+    }
+}
+
+/* ========================================================================== */
+/* Below Large  (< 992px)  ->  Medium screens and smaller (tablets) */
+/* ========================================================================== */
+@media (max-width: 991.98px) {
+
+    /* Global */
+    html,
+    body {
+        overflow-x: hidden;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    /* Navbar */
+    .navbar .left-section span {
+        font-size: 24px;
+    }
+
+    .med-section ul {
+        padding-left: 0;
+        font-size: 14px;
+    }
+
+    /* Hero Section */
+    .hero-parent {
+        height: auto;
+        padding-block: 40px;
+    }
+
+    .hero-section {
+        flex-direction: column;
+        gap: 60px;
+    }
+
+    .hero-section .left-section p br {
+        display: none;
+    }
+
+    .hero-section .right-section {
+        width: 100%;
+        max-width: 600px;
+    }
+
+    .hero-section .right-section img {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 3 / 2;
+    }
+
+    .hero-section .left-section .style,
+    .hero-section .left-section .specaill,
+    .hero-section .right-section .style {
+        display: none;
+    }
+
+    /* Second Section */
+    .second-section .container {
+        flex-direction: column;
+    }
+
+    .second-section .container .w-70,
+    .second-section .container .w-30 {
+        width: 100%;
+    }
+
+    .second-section .left-section,
+    .second-section .right-section {
+        position: static;
+    }
+
+    .second-section .left-section .card .img-div {
+        width: 200px;
+    }
+
+    .second-section .right-section .right-cards {
+        margin-right: 10px;
+    }
+
+    /* Third Section */
+    .third-section h2 {
+        font-size: 40px;
+    }
+
+    .third-section-cards {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .third-section .third-section-cards .card {
+        width: calc(50% - 15px);
+    }
+
+    /* Fourth Section */
+    .forth-section h2 {
+        font-size: 40px;
+    }
+
+    .forth-section .sections {
+        flex-direction: column;
+    }
+
+    .forth-section .sections .left-section,
+    .forth-section .right-section {
+        width: 100%;
+    }
+
+    /* Footer */
+    .footer {
+        padding: 40px 20px;
+    }
+
+    .footer .sections {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .footer .left-section,
+    .footer .medel-section,
+    .footer .right-section {
+        width: 100%;
+    }
+}
+
+/* RWD */
+@media (max-width: 767.98px) {
+
+    body {
+        padding-top: 70px;
+    }
+
+
+    .navbar {
+        top: 10px;
+    }
+
+    .navbar .med-section {
+        display: none;
+    }
+
+    .navbar .left-section span {
+        font-size: 20px;
+    }
+
+    .navbar .right-section a {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+
+    .hero-section .left-section h1 {
+        font-size: 44px;
+    }
+
+    .hero-section .left-section p {
+        font-size: 18px;
+        padding: 15px;
+    }
+
+    .hero-section .left-section .btns {
+        flex-wrap: wrap;
+    }
+
+    .hero-section .left-section button {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+
+
+    .second-section .container h2 {
+        font-size: 30px;
+    }
+
+    .second-section .left-section .badge {
+        position: static;
+        transform: rotate(-2deg);
+        margin-bottom: 25px;
+    }
+
+    .second-section .left-section .card {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 15px;
+    }
+
+    .second-section .left-section .card .img-div {
+        width: 100%;
+    }
+
+    .second-section .left-section .last-btn {
+        font-size: 22px;
+    }
+
+    .third-section h2 {
+        font-size: 32px;
+    }
+
+    .third-section .container p {
+        font-size: 16px;
+    }
+
+    .third-section .third-section-cards .card {
+        width: 100%;
+        max-width: 450px;
+    }
+
+    .third-section .line,
+    .forth-section .line {
+        position: static;
+        transform: none;
+        margin: 15px auto 0;
+    }
+
+    .forth-section h2 {
+        font-size: 32px;
+    }
+
+    .forth-section .left-section h2,
+    .forth-section .right-section h2 {
+        font-size: 24px;
+    }
+
+    .forth-section .container h3 {
+        font-size: 16px;
+    }
+
+    .forth-section .line {
+        margin-bottom: 30px;
+    }
+
+    .forth-section .sections .left-section p {
+        font-size: 16px;
+    }
+
+    .forth-section button {
+        padding: 15px 25px;
+        font-size: 16px;
+    }
+
+
+    .footer .footer-foot {
+        padding: 10px 0;
+    }
+
+    .footer .footer-foot .content {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .footer .footer-foot .content ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-left: 0;
+        gap: 15px;
+    }
+}
+@media (max-width: 575.98px) {
+
+    .container {
+        width: 92%;
+    }
+    .hero-section .left-section h1 {
+        font-size: 34px;
+    }
+    .hero-section .left-section p {
+        font-size: 16px;
+    }
+    .hero-section .left-section .btns {
+        flex-direction: column;
+    }
+    .hero-section .right-section span {
+        padding: 6px 12px;
+        font-size: 14px;
+    }
+    .second-section .container h2 {
+        font-size: 24px;
+    }
+    .second-section .left-section .card .foot .icon {
+        gap: 10px 15px;
+        justify-content: flex-start;
+        font-size: 13px;
+    }
+    .second-section .right-section .right-cards h3 {
+        font-size: 24px;
+    }
+    .second-section .left-section .last-btn {
+        font-size: 18px;
+        padding: 10px 15px;
+    }
+    .third-section h2 {
+        font-size: 26px;
+    }
+    .third-section .third-section-cards .card h3 {
+        font-size: 24px;
+    }
+    .forth-section h2 {
+        font-size: 26px;
+    }
+    .forth-section .sections {
+        gap: 30px;
+    }
+    .forth-section .right-section .card .foot .name {
+        font-size: 16px;
+    }
+    .inner {
+        padding: 12px;
+    }
+    .footer .right-section form input {
+        font-size: 16px;
+    }
+
+    .footer button {
+        font-size: 16px;
+    }
+}
